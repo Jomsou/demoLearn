@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+	#div1{
+		width: 100px;
+		height: 400px;
+		display: none;
+		background: gray;
+	}
+</style>
+<script>
+	function xian(){
+		var xians = document.getElementById('div1');
+		if(xians.style.display == 'none'){
+			xians.style.display = 'block';
+		}else{
+			xians.style.display = 'none';
+		}
+	}
+</script>
+</head>
+<body>
+    <input type="button" value="显示隐藏" onclick="xian()">
+    <div id="div1"></div>
+</body>
+</html>

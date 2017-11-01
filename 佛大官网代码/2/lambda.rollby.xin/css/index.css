@@ -1,0 +1,224 @@
+﻿*{ margin: 0; padding: 0;  border-width: 0; font-family: 微软雅黑;}
+
+a{ text-decoration: none; }
+
+ul{ list-style-type: none; }
+
+body{ background: #eff3f5 !important; }
+
+#container{  }
+/*A 头部搜索框，logo，导航栏样式*/
+#header{ background-color: #0096ff; width: 100%; }
+
+#header #head{ width: 1020px; /*height: 170px;*/ margin: 0 auto; }
+
+#header #head #top{ width: 1020px; height: 117px; }
+
+#header #head #top #logo{ float: left; width: 400px; height:95px; padding-top: 15px; margin-left: 8px; }
+
+#header #head #top #search{ width: 200px; height: 55px; float: right;  padding-top: 40px; margin-right: 5px; color: white;}
+
+#header #head #top #search .search_two{ height: 25px; }
+
+#header #head #top #search a{ color: white; font-size: 14px;}
+
+#header #head #top #search a:hover{ color: #004a7e; }
+
+#header #head #top #search #s{ width: 125px; height: 25px; padding: 0 5px; border-width: 0; border-radius:5px;}
+
+#header #head #top #search #ss{ background: url(../images/icon-search.png) no-repeat ; height: 21px; width: 21px; border-width:0; margin-left: 3px; }
+
+/*B 导航栏*/
+#header #menu #navs{ height: 50px; width: 1020px; margin: 0 auto;}
+
+#header #menu #navs ul{ height: 50px; }
+
+#header #menu #navs ul .lis{ float: left;  width: 127px; height: 50px;}
+
+#header #menu #navs ul .lis a{ display: block; color: #eff3f5; height: 50px; line-height: 50px; font-size: 1.2em; text-align: center; width: 127px;}
+
+#header #menu #navs ul .lis:hover{ background-color: #004a7e;}
+
+#header #menu #navs ul .lis:hover ul{ background-color: #004a7e; }
+
+#header #menu #navs ul .lis ul{ height: 214px; width:127px; position: absolute; z-index: 1000; display: none; border-right: 1px dotted #ccc; }
+
+/*C.改变className，显示二级菜单*/
+#header #menu #navs ul .lis .on{ display: block; overflow: hidden;}
+
+#header #menu #navs ul .lis ul li{ height: 34px; width: 127px;}
+
+#header #menu #navs ul .lis ul li a{ font-size: 0.95em; color: #fff; line-height: 34px; display: block; height: 34px; width: 127px;}
+
+#header #menu #navs ul .lis ul li a:hover{ color: #fff; text-decoration: underline;}
+/*! C结束*/
+
+/*D 承载二级菜单的盒子样式*/
+#header #menu #navs_box{ position: absolute; width: 100%; height: 214px; background-color:#004a7e;  display: none; opacity: 0.8; filter : alpha(opacity=80) ; z-index: 999; /*-webkit-opacity: 0.8; -moz-opacity: 0.8; -khtml-opacity: 0.8; */}
+/*!A&D&B 结束*/
+
+/*E 主体*/
+#main{ margin-bottom: 20px; }
+
+/*幻灯片*/
+#main #img_box{ height: 400px; width: 100%; background: #ccc; overflow: hidden;}
+
+#main #img_box #plays{ width: 1020px; height: 400px; margin: 0 auto; position: relative;}
+
+#main #img_box #plays ul{ width: 13260px; height: 400px; position: absolute; left: -2040px; overflow: hidden;}
+
+#main #img_box #plays ul li{ float: left; }
+
+#main #img_box #plays #plays_left{ width: 1020px; height: 400px; position: absolute; top: 0; left: -1020px; opacity: 0.6; filter : alpha(opacity=60) ; z-index: 997; background-color: #fff;}
+
+#main #img_box #plays #plays_right{ width: 1020px; height: 400px; position: absolute; top: 0; right: -1020px; opacity: 0.6; filter : alpha(opacity=60) ; z-index: 997; background-color: #fff;}
+
+#main #img_box #plays #p_prev{ position: absolute; top: 50%; left: 0; background: url(../images/left.png) no-repeat; height: 45px; width: 46px;}
+
+#main #img_box #plays #p_next{ position: absolute; top: 50%; right: 0; background: url(../images/right.png) no-repeat; height: 45px; width: 46px;}
+
+
+/*F 主体的新闻部分*/
+#main #title #title_{ width: 1020px; margin: 0 auto; margin-top: 25px; }
+/*G 第一列*/
+#main #title #title_ #title_ul{ float: left; /*min-height: 420px;*/ width: 170px; border-top: 3px solid #0096ff; background-color: #fff; color: #333; margin-bottom: 30px;}
+
+#main #title #title_ #title_ul:hover{ box-shadow:0px 0px 8px rgba(0,150,255,0.7) ; }
+
+#main #title #title_ #title_ul ul li{ line-height: 31px; font-size: 14px; padding-left: 15px; padding: 7px; border-right: 1px solid #d5d5d5; border-bottom: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; padding-left: 17px;}
+
+#main #title #title_ #title_ul ul li a{ color: #000; display: block; }
+
+#main #title #title_ #title_ul ul li:hover{ background: #0096ff; border-left: 7px solid #434757; padding-left: 10px; }
+
+#main #title #title_ #title_ul ul li a:hover{ color: #fff; }
+/*!G 结束*/
+
+/*H 第二列，图片新闻，媒体聚焦，新闻网及下部样式*/
+#main #title #title_ #title_news{ float:left; width: 400px; height: 420px; margin-left: 12.7px; border-top: 3px solid #0096ff; border-right: 1px solid #d5d5d5; border-bottom: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; background: #fff; }
+
+#main #title #title_ #title_news:hover{ box-shadow:0px 0px 8px rgba(0,150,255,0.7) ; }
+
+#main #title #title_ #title_news #news_top{ height: 35px; width: 400px; background: #eee;}
+
+#main #title #title_ #title_news #news_top ul{  }
+
+#main #title #title_ #title_news #news_top ul li{ float: left; width:133.33px;  cursor: pointer;  text-align: center;}
+
+#main #title #title_ #title_news #news_top ul #news_top_ul_li1{ background: url(../images/icon-list-white.png) no-repeat 15px 50%; }
+
+#main #title #title_ #title_news #news_top ul #news_top_ul_li2{ background: url(../images/icon-video-white.png) no-repeat 15px 50%; }
+
+#main #title #title_ #title_news #news_top ul li a{ line-height: 35px; color: #000; }
+
+#main #title #title_ #title_news #news{ height: 360px; }
+
+#main #title #title_ #title_news #news div{ height: 360px; }
+
+#main #title #title_ #title_news #news #news_l ul,#main #title #title_ #title_news #news #news_ll ul{ margin-left: 10px; margin-top: 15px;}
+
+#main #title #title_ #title_news #news #news_l ul li,#main #title #title_ #title_news #news #news_ll ul li{ height: 82px; width: 385px; margin-top: 11px; vertical-align: bottom;}
+
+#main #title #title_ #title_news #news #news_l ul li div,#main #title #title_ #title_news #news #news_ll ul li div{ float: left; height: 82px; }
+
+#main #title #title_ #title_news #news #news_l ul li .div_img,#main #title #title_ #title_news #news #news_ll ul li .div_img{ width: 96.9666px; height: 82px; }
+
+#main #title #title_ #title_news #news #news_l ul li .div_news,#main #title #title_ #title_news #news #news_ll ul li .div_news{ width: 270px; height: 82px; margin-left: 13px; font-size: 13px;}
+
+#main #title #title_ #title_news #news #news_l ul li .div_news span a,#main #title #title_ #title_news #news #news_ll ul li .div_news span a{ color: #0e90d2; }
+
+#main #title #title_ #title_news #news #news_l ul li .div_news p,#main #title #title_ #title_news #news #news_ll ul li .div_news p{ font-size: 11px; color: #ccc; text-indent: 2em; }
+
+#main #title #title_ #title_news #news #news_l ul li .div_news p a,#main #title #title_ #title_news #news #news_ll ul li .div_news p a{ color: #555;}
+
+#main #title #title_ #title_news #news #news_l ul li .div_news span a:hover,#main #title #title_ #title_news #news #news_l ul li .div_news p a:hover,#main #title #title_ #title_news #news #news_ll ul li .div_news span a:hover,#main #title #title_ #title_news #news #news_ll ul li .div_news p a:hover{ color: #095f8a; }
+
+#main #title #title_ #title_news #news{}
+
+#main #title #title_ #title_news #news{}
+
+/*I 改变className，图片新闻，媒体聚集 卡片切换样式*/
+#main #title #title_ #title_news #news .news_hide{ display: none; }
+
+#main #title #title_ #title_news #news_top ul .news_on0{ background:#0096ff url(../images/icon_list_blue.png) no-repeat 15px 50% !important;}
+
+#main #title #title_ #title_news #news_top ul .news_on1{ background:#0096ff url(../images/icon-video-blue.png) no-repeat 15px 50% !important;}
+
+#main #title #title_ #title_news #news_top ul .news_on0 a,#main #title #title_ #title_news #news_top ul .news_on1 a{ color: #fff; }
+/*!I&H 结束*/
+
+/*K 第三列*/
+#main #title #title_ #title_manages{ height: 422px; width: 425px; float: right; border-top: 3px solid #0096ff; border-right: 1px solid #d5d5d5; border-bottom: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5; background: #fff;}
+
+#main #title #title_ #title_manages:hover{ box-shadow:0px 0px 8px rgba(0,150,255,0.7) ; }
+
+#main #title #title_ #title_manages #title_manages_top{ height: 42px; background: #eee;}
+
+#main #title #title_ #title_manages #title_manages_top ul{  }
+
+#main #title #title_ #title_manages #title_manages_top ul li{ float: left; cursor: pointer;  text-align: center; width: 24.9%; }
+
+#main #title #title_ #title_manages #title_manages_top ul li a{ line-height: 42px; color: #000; }
+
+#main #title #title_ #title_manages #title_manages_box div{ opacity: 0; filter: alpha(opacity = 0);}
+
+#main #title #title_ #title_manages #title_manages_box #title_manages_box_div1{ opacity: 100; filter: alpha(opacity = 100); }
+
+#main #title #title_ #title_manages #title_manages_box div ul{ margin-top: 15px; }
+
+#main #title #title_ #title_manages #title_manages_box div ul li{ height: 50px;  border-left: 4px solid #0096ff; margin-left: 10px; margin-top: 11px; vertical-align: bottom;}
+
+#main #title #title_ #title_manages #title_manages_box div ul li a{ text-indent:1em; font-size: 14px; color: #0e90d2; display: block; line-height: 27px; height: 27px;}
+
+#main #title #title_ #title_manages #title_manages_box div ul li a:hover{ color: #095f8a; }
+
+#main #title #title_ #title_manages #title_manages_box div ul li span{ margin-left: 14px; font-size: 14px;}
+/*L 第三列切换功能样式*/
+#main #title #title_ #title_manages #title_manages_top ul .manages_on{ background-color: #0096ff; }
+
+#main #title #title_ #title_manages #title_manages_top ul .manages_on a{ color: #fff; }
+
+#main #title #title_ #title_manages #title_manages_box .manages_hide{ display: none; opacity: 0 !important; filter: alpha(opacity = 0) !important;}
+
+
+/*!K&L 结束*/
+
+/*J 底部*/
+#footer{ height: 75px; width: 100%; background: #333; clear: both;}
+
+#footer #footer_center{ height: 75px; width: 1020px; margin: 0 auto; }
+
+#footer #footer_center .related{ height: 75px; }
+
+#footer #footer_center #related_one{ height: 75px; min-width: 100px; float: left; }
+
+#footer #footer_center .related ul { margin-top:16px; }
+
+#footer #footer_center .related ul li{ line-height: 20px; height: 20px; margin-right: 10px;}
+
+#footer #footer_center .related ul li span,#footer #footer_center .related ul li span a{ font-size: 12px; color: #bfc7d9; /*margin-right: 5px;*/ }
+
+#footer #footer_center #related_two{ height: 75px; min-width: 168px; float: left;}
+
+#footer #footer_center #related_img{ height: 41px; padding-top: 16px; }
+/*M 底部——右侧广告*/
+#footer #ad{ position: fixed; top: 100px; right: 10px; width: 150px; height: 310.6px; float: right; z-index: 1000;}
+
+#footer #ad #ad_img{ background: #D6DCDE; }
+
+#footer #ad #ad_img img{ margin-bottom: 5px; border-width: 0;}
+
+#footer #ad #ad_img a{ display: block; }
+
+#footer #ad #ad_hide{ background: #C4CED3; color: #fff; cursor: pointer; text-align:center; }
+
+#footer #ad #ad_hide:hover{ background: #0076ff; }
+
+/*回到顶部按钮样式*/
+#returnTop{ height: 35px; width: 35px; border: 10px solid #014d9a; border-bottom: 15px solid #014d9a; border-top: 5px solid #014d9a; background:#014d9a;  opacity: 0.5; filter: alpha(opacity = 50); position: fixed; right: 10px; bottom: 70px; border-radius: 50%; overflow: hidden; text-align: center; display: none;}
+
+#returnTop a{ color: azure; font-size: 60px; font-weight: bold; opacity: 0.8; filter: alpha(opacity = 80);}
+
+#returnTop a:hover{ color: #fff; opacity: 1; filter: alpha(opacity = 100);}
+
+
